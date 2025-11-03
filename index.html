@@ -6,6 +6,7 @@
     <title>Sabores DAM</title>
     <meta name="author" content="Hugo Muñoz Vallina">
     <meta name="keywords" content="restauramte, comida, carta, menú">
+    <script src="js/modal-reserva.js" defer></script>
 </head>
 <body>
 
@@ -119,26 +120,39 @@
                 </li>
             </ul>
         </article>
-
-        <aside>
-            <h2>Información Práctica</h2>
-            <dl>
-                <dt>Horario:</dt>
-                <dd>Lunes a Sábado: 12:00 – 23:00</dd>
-                <dd>Domingos: 12:00 – 17:00</dd>
-
-                <dt>Accesibilidad:</dt>
-                <dd>Entrada adaptada y baño accesible.</dd>
-
-                <dt>Aparcamiento:</dt>
-                <dd>Zona de estacionamiento gratuito para clientes.</dd>
-
-                <dt>Recomendación:</dt>
-                <dd>Se aconseja reservar mesa los fines de semana.</dd>
-            </dl>
-        </aside>
-
     </main>
+
+    <aside>
+        <h2>Información Práctica</h2>
+        <dl>
+            <dt>Horario:</dt>
+            <dd>Lunes a Sábado: 12:00 – 23:00</dd>
+            <dd>Domingos: 12:00 – 17:00</dd>
+
+            <dt>Accesibilidad:</dt>
+            <dd>Entrada adaptada y baño accesible.</dd>
+
+            <dt>Aparcamiento:</dt>
+            <dd>Zona de estacionamiento gratuito para clientes.</dd>
+
+            <dt>Recomendación:</dt>
+            <dd>Se aconseja reservar mesa los fines de semana.</dd>
+        </dl>
+    </aside>
+
+    <button id="abrir-reserva">Reservar mesa</button>
+
+    <dialog id="modal-reserva">
+        <h3>Solicitud de Reserva</h3>
+        <ul>
+            <li>Máximo 6 personas por reserva online.</li>
+            <li>Rogamos 15 minutos de cortesía.</li>
+            <li>Asegúrese del menú a encargar.</li>
+            <li>Idinque cualquier alérgeno a tener en cuenta.</li>
+        </ul>
+
+        <button id="cerrar-reserva">Cerrar</button>
+    </dialog>
 
     <footer>
     </footer>
